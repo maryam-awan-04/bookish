@@ -7,7 +7,7 @@ CREATE TABLE dbo.Books (
     bookId int IDENTITY(1,1) NOT NULL PRIMARY KEY,
     bookTitle varchar(30) NOT NULL,
     author varchar(30) NOT NULL,
-    isbn int NOT NULL, 
+    isbn varchar NOT NULL, 
     copies int NOT NULL,
     availableCopies int NOT NULL,
     available bit NOT NULL,
