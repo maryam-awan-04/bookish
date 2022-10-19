@@ -1,0 +1,6 @@
+INSERT INTO dbo.Users
+    ([firstname], [surname])
+VALUES
+    ('Maryam', 'Awan'),
+    ('Andy', 'Huang')
+GO
