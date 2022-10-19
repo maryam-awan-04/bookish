@@ -1,5 +1,26 @@
 {
+  "name": "bookish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bookish.js",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "mssql": "^9.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node ./dist/bookish.js",
+    "dev": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryam-awan-04/bookish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maryam-awan-04/bookish/issues"
+  },
+  "homepage": "https://github.com/maryam-awan-04/bookish#readme"
 }
