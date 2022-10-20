@@ -4,7 +4,9 @@
   "description": "",
   "main": "bookish.js",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
     "mssql": "^9.0.1"
   },
   "scripts": {
@@ -22,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/maryam-awan-04/bookish/issues"
   },
-  "homepage": "https://github.com/maryam-awan-04/bookish#readme"
+  "homepage": "https://github.com/maryam-awan-04/bookish#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/mssql": "^8.1.1"
+  }
 }

@@ -1,5 +1,6 @@
 import express from 'express'
 import sql from 'mssql'
+import bodyParser from 'body-parser'
 
 interface Book {
     bookId: string;
@@ -11,12 +12,16 @@ interface Book {
     available: boolean;
 }
 
+interface User {
+    userId: string,
+    firstname: string,
+    surname: string,
+}
+
 const app = express()
 const appPort = 3000
 const appHostname = 'localhost'
-const serverPort = 1433
 const serverHostname = 'localhost'
-const serverPassword = 'Bootcamp22!'
 
 const sqlConfig = {
     user: 'sa',
@@ -36,6 +41,8 @@ const sqlConfig = {
 }
     
 app.use(express.json())
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 async function fetchBooks() {
     await sql.connect(sqlConfig)
